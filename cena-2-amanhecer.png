@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="dawn2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2E2E2"/>
+      <stop offset="0.55" stop-color="#F6EEE6"/>
+      <stop offset="1" stop-color="#EBD9C7"/>
+    </linearGradient>
+    <radialGradient id="sun2" cx="0.5" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#C9A15B" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#C9A15B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#dawn2)"/>
+  <circle cx="400" cy="250" r="300" fill="url(#sun2)"/>
+  <!-- raios suaves -->
+  <g stroke="#C9A15B" stroke-width="2" opacity="0.14">
+    <line x1="400" y1="0" x2="400" y2="120"/>
+    <line x1="180" y1="90" x2="250" y2="170"/>
+    <line x1="620" y1="90" x2="550" y2="170"/>
+    <line x1="60" y1="260" x2="160" y2="270"/>
+    <line x1="740" y1="260" x2="640" y2="270"/>
+  </g>
+  <!-- silhueta serena (rosto levemente erguido, cabelo solto) -->
+  <g fill="#4E2239">
+    <path d="M330 250
+             q-10 -54 44 -70
+             q54 -16 84 24
+             q18 26 10 60
+             q-4 20 -18 32
+             q10 16 6 40
+             l-10 60
+             q-40 10 -78 4
+             q-10 -34 -6 -66
+             q-30 -16 -34 -56
+             q-2 -20 12 -24 z"/>
+    <path d="M262 470
+             q10 -80 84 -96
+             q46 -8 78 8
+             q46 26 50 90
+             l6 128 l-234 0 z"/>
+  </g>
+  <!-- mecha de luz no cabelo -->
+  <path d="M330 250 q-10 -54 44 -70 q54 -16 84 24"
+        fill="none" stroke="#C9A15B" stroke-width="3" opacity="0.5"/>
+</svg>

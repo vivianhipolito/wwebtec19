@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C1220"/>
+      <stop offset="1" stop-color="#4E2239"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B3550" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6B3550" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="moon1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C9A15B" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#C9A15B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky1)"/>
+  <!-- janela -->
+  <rect x="430" y="70" width="320" height="440" rx="4" fill="#1C0B15"/>
+  <rect x="446" y="86" width="288" height="408" rx="2" fill="#3A1830"/>
+  <!-- lua difusa -->
+  <circle cx="640" cy="180" r="120" fill="url(#moon1)"/>
+  <circle cx="640" cy="180" r="42" fill="#D8C4A0" opacity="0.85"/>
+  <!-- caixilho -->
+  <rect x="586" y="86" width="4" height="408" fill="#1C0B15"/>
+  <rect x="446" y="286" width="288" height="4" fill="#1C0B15"/>
+  <!-- brilho suave subindo do parapeito -->
+  <rect x="430" y="360" width="320" height="150" fill="url(#glow1)"/>
+  <!-- silhueta da mulher (perfil, olhando a janela) -->
+  <g fill="#160812">
+    <!-- cabelo/cabeça -->
+    <path d="M300 210
+             q-6 -46 34 -60
+             q46 -16 70 20
+             q14 22 8 52
+             q-4 24 -20 34
+             q6 20 2 40
+             l-8 44
+             q-30 8 -60 4
+             q-8 -30 -6 -60
+             q-30 -14 -34 -50
+             q-2 -18 14 -24 z"/>
+    <!-- ombro/tronco -->
+    <path d="M250 420
+             q10 -70 70 -84
+             q40 -8 66 6
+             q40 22 44 78
+             l6 100 l-206 0 z"/>
+  </g>
+  <!-- reflexo tênue no vidro -->
+  <path d="M300 210 q-6 -46 34 -60 q46 -16 70 20 q14 22 8 52 q-4 24 -20 34"
+        fill="none" stroke="#C98F97" stroke-width="1" opacity="0.12" transform="translate(250,0) scale(-1,1) translate(-800,0)"/>
+</svg>
